@@ -1,0 +1,215 @@
+
+.register-page {
+  min-height: 100vh;
+  background: #f5f7fa;
+  padding: 35px 20px 60px;
+  font-family: inherit;
+}
+
+.register-logo {
+  display: block;
+  width: fit-content;
+  margin: 0 auto 30px;
+  color: #102440;
+  font-size: 25px;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.register-logo span {
+  color: #d5a441;
+}
+
+.register-container {
+  width: 100%;
+  max-width: 520px;
+  margin: auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(16, 36, 64, 0.08);
+}
+
+.register-eyebrow {
+  color: #b58b32;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.register-container h1 {
+  margin: 12px 0;
+  color: #102440;
+  font-size: 32px;
+}
+
+.register-container > p {
+  color: #687586;
+  font-size: 14px;
+}
+
+.account-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 28px 0;
+}
+
+.account-options button {
+  padding: 15px 10px;
+  border: 1px solid #dce2e9;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #102440;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.account-options button.selected {
+  border: 2px solid #d5a441;
+  background: #fffaf0;
+}
+
+.register-form h2 {
+  margin-bottom: 22px;
+  color: #102440;
+  font-size: 21px;
+}
+
+.register-form label {
+  display: block;
+  margin: 17px 0 8px;
+  color: #26384d;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #dce2e9;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.register-form input:focus {
+  border-color: #d5a441;
+  box-shadow: 0 0 0 3px rgba(213, 164, 65, 0.12);
+}
+
+.register-submit {
+  width: 100%;
+  margin-top: 28px;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #102440;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.register-submit:hover {
+  background: #1b385c;
+}
+
+.register-login {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.register-login a,
+.back-home {
+  color: #a77b24;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.back-home {
+  display: block;
+  margin-top: 25px;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .register-page {
+    padding: 20px 14px 40px;
+  }
+
+  .register-container {
+    padding: 25px 20px;
+  }
+
+  .register-container h1 {
+    font-size: 26px;
+  }
+
+  .account-options {
+    grid-template-columns: 1fr;
+  }
+}
+
+.register-form select {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #dce2e9;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #26384d;
+  font-size: 14px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.register-form select:focus {
+  border-color: #d5a441;
+  box-shadow: 0 0 0 3px rgba(213, 164, 65, 0.12);
+}
+
+.form-note {
+  margin: 8px 0 18px;
+  color: #687586;
+  font-size: 12px;
+}
+
+.approval-notice {
+  margin-top: 22px;
+  padding: 16px;
+  border-left: 4px solid #d5a441;
+  border-radius: 6px;
+  background: #fffaf0;
+  color: #102440;
+}
+
+.approval-notice p {
+  margin-bottom: 0;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.register-form .terms-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 22px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.register-form .terms-label input {
+  width: auto;
+  margin-top: 3px;
+  accent-color: #102440;
+}
+
+.form-error {
+  color: #c0392b;
+  font-size: 13px;
+  margin-top: 12px;
+}

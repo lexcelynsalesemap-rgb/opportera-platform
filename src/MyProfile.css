@@ -1,0 +1,140 @@
+
+.my-profile {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 0 40px;
+  color: #102440;
+}
+
+.profile-heading {
+  margin-bottom: 28px;
+}
+
+.profile-heading > span {
+  color: #b58b32;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.profile-heading h2 {
+  margin: 10px 0;
+  font-size: 30px;
+  color: #102440;
+}
+
+.profile-heading p {
+  color: #718096;
+  font-size: 14px;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profile-section {
+  background: #ffffff;
+  border: 1px solid #e8edf3;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(16, 36, 64, 0.035);
+}
+
+.profile-section h3 {
+  font-size: 17px;
+  margin: 0 0 22px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #edf0f4;
+  color: #102440;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.profile-section label {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  color: #34445a;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.profile-section input,
+.profile-section select,
+.profile-section textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #dce3eb;
+  border-radius: 7px;
+  padding: 12px 13px;
+  background: #ffffff;
+  color: #102440;
+  font: inherit;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.profile-section input:focus,
+.profile-section select:focus,
+.profile-section textarea:focus {
+  border-color: #c69b43;
+  box-shadow: 0 0 0 3px rgba(198, 155, 67, 0.12);
+}
+
+.profile-section textarea {
+  min-height: 105px;
+  resize: vertical;
+}
+
+.profile-section .summary-input {
+  min-height: 145px;
+}
+
+.save-profile-btn {
+  align-self: flex-start;
+  border: none;
+  border-radius: 7px;
+  padding: 14px 25px;
+  background: #102440;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.save-profile-btn:hover {
+  background: #c69b43;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 650px) {
+  .my-profile {
+    padding: 5px 0 25px;
+  }
+
+  .profile-heading h2 {
+    font-size: 25px;
+  }
+
+  .profile-section {
+    padding: 18px;
+  }
+
+  .profile-grid {
+    grid-template-columns: 1fr;
+    gap: 17px;
+  }
+
+  .save-profile-btn {
+    width: 100%;
+  }
+}
