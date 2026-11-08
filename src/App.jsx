@@ -4,6 +4,7 @@ import './App.css'
 import Register from './Register'
 import Login from './Login'
 import CandidateDashboard from './CandidateDashboard'
+import EmployerDashboard from './EmployerDashboard'
 
 function App() {
   const [currentPage, setCurrentPage] = useState(
@@ -63,7 +64,14 @@ function App() {
       />
     )
   }
-
+if (currentPage === '/employer-dashboard') {
+  return (
+    <EmployerDashboard
+      language={language}
+      setLanguage={setLanguage}
+    />
+  )
+}
   const categories = [
     { name: 'Administration', ar: 'الإدارة' },
     { name: 'Customer Service', ar: 'خدمة العملاء' },
